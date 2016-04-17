@@ -44,11 +44,11 @@ view : Signal.Address Action -> State -> Html.Html
 view address state =
   div [] 
     [
-     div [cssCount] [text ("count: " ++ toString state.count)],
-     div [cssHighest] [text ("highest: " ++ toString state.highest)],
-     button [onClick address Increment] [text "+"],
-     button [onClick address Decrement] [text "-"],
-     button [onClick address Reset] [text "R"],
-     button [onClick address (Add 5)] [text "5"]
-     ]
+      div [cssCount] [text ("count: " ++ toString state.count)],
+      div [cssHighest] [text ("highest: " ++ toString state.highest)],
+      button [onClick address Increment] [text "+"],
+      button [onClick address Decrement] [text "-"],
+      button [onClick address Reset] [text "R"],
+      button [onClick address (Add 5)] [text "5"]
+    ]
      
